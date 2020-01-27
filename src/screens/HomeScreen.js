@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const HomeScreen = ( { navigation }) => {
+const HomeScreen = ( { navigation }) => { //destructuring the props object received to obtain only the navigation characteristic
   
   return (
     <View>
@@ -14,6 +14,10 @@ const HomeScreen = ( { navigation }) => {
       <Button 
         onPress={() => navigation.navigate('List')} //to go to the "List" component. 
         title="Go to List" 
+      />
+      <Button 
+        onPress={() => navigation.navigate('Images')} //to go to the "List" component. 
+        title="Go to Images" 
       />
       {/* <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List</Text>
