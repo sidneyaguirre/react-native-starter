@@ -5,13 +5,15 @@ import HomeScreen from './src/screens/HomeScreen';
 import myComponent from './src/screens/myComponent';
 import ListScreen from './src/screens/ListScreen'
 import ImageScreen from './src/screens/ImageScreen';
+import CounterScreen from './src/screens/CounterScreen'
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Components: myComponent,
     List: ListScreen,
-    Images: ImageScreen
+    Images: ImageScreen,
+    Counter: CounterScreen
   },
   {
     initialRouteName: 'Home',

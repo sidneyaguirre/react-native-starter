@@ -16,9 +16,14 @@ const HomeScreen = ( { navigation }) => { //destructuring the props object recei
         title="Go to List" 
       />
       <Button 
-        onPress={() => navigation.navigate('Images')} //to go to the "List" component. 
+        onPress={() => navigation.navigate('Images')}  
         title="Go to Images" 
       />
+      <Button 
+        onPress={() => navigation.navigate('Counter')}  
+        title="Go to Counter" 
+      />
+
       {/* <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List</Text>
       </TouchableOpacity> */}
